@@ -56,7 +56,7 @@
                     @if(Auth::guard('admin')->user())
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                {{ Auth::guard('admin')->user()->name }} <span class="caret"></span>
+                                {{ Auth::guard('admin')->user()->username }} <span class="caret"></span>
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
@@ -66,7 +66,7 @@
                     @elseif(Auth::guard('user')->user())
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                {{ Auth::guard('user')->user()->name }} <span class="caret"></span>
+                                {{ Auth::guard('user')->user()->username }} <span class="caret"></span>
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
